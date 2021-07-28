@@ -54,8 +54,14 @@
           <div class="col-12 col-lg-5">
             <div class="header__img-container h-img-block">
               <!-- Во время адаптивности лицо девушки имеет приоритет, по этому слой с девушкой находится выше -->
-              <img src="img/header/women.webp"  alt="women" class="h-img-block__img h-img-block__img--women">
-              <img src="img/header/anti.webp" alt="Antiseptics" class="h-img-block__img h-img-block__img--products">
+              <picture>
+                <source srcset="img/header/women.webp" type="image/webp">
+                <img src="img/header/women.png"  alt="women" class="h-img-block__img h-img-block__img--women">
+              </picture>
+              <picture>
+                <source srcset="img/header/anti.webp" type="image/webp">
+                <img src="img/header/anti.png" alt="Antiseptics" class="h-img-block__img h-img-block__img--products">
+              </picture>
             </div>
           </div>
         </div>
@@ -88,13 +94,22 @@
                 <div class="swiper-container product-slider">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <img src="img/desc-poduct/product.webp" alt="product" class="product-desc__img">
+                      <picture>
+                        <source srcset="img/desc-poduct/product.webp" type="image/webp">
+                        <img src="img/desc-poduct/product.png" alt="product-1" class="product-desc__img">
+                      </picture>
                     </div>
                     <div class="swiper-slide">
-                      <img src="img/desc-poduct/product-2.webp" alt="product" class="product-desc__img">
+                      <picture>
+                        <source srcset="img/desc-poduct/product-2.webp" type="image/webp">
+                        <img src="img/desc-poduct/product-2.png" alt="product-2" class="product-desc__img">
+                      </picture>
                     </div>
                     <div class="swiper-slide">
-                      <img src="img/desc-poduct/product-3.webp" alt="product" class="product-desc__img">
+                      <picture>
+                        <source srcset="img/desc-poduct/product-3.webp" type="image/webp">
+                        <img src="img/desc-poduct/product-3.png" alt="product-3" class="product-desc__img">
+                      </picture>
                     </div>
                   </div>
                 </div>
@@ -133,7 +148,10 @@
         <h2 class="form__title h h--2"><span>Заказать</span> антисептики</h2>
         <p class="form__desc content-text">Цены могут гибко меняться в зависимости от объема заказа</p>
         <div class="form__img-container form__img-container--mobile">
-          <img src="img/popup/product.webp" alt="product" class="form__img" />
+          <picture>
+            <source srcset="img/popup/product.webp" type="image/webp">
+            <img src="img/popup/product.png" alt="product-form" class="form__img" />
+          </picture>
         </div>
         <form action="#" method="post">
           <input class="form__field" type="text" placeholder="Имя" required />
@@ -143,7 +161,10 @@
         </form>
       </div>
       <div class="form__img-container">
-        <img src="img/popup/product.webp" alt="product" class="form__img" />
+        <picture>
+          <source srcset="img/popup/product.webp" type="image/webp">
+          <img src="img/popup/product.png" alt="product-form" class="form__img" />
+        </picture>
       </div>
       <button class="form__close"></button>
     </div>
